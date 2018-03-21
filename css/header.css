@@ -1,0 +1,226 @@
+header {
+	/*position: fixed;*/
+	height:165px;
+	margin: 0px;
+	background-color: rgba(0,0,0,.077);
+	box-shadow: inset 0px 2px 2px rgba(0,0,0,.075), 8px 8px 19px green;
+	background:url(../images/logo3.png) top center repeat-x;
+}
+
+
+#entete{
+	border: 1px solid blue;
+	padding: 5px;
+	top:100px;
+
+}
+.client{
+	display: inline;
+	float: right;
+	border-right: 2px;
+	width: auto;
+	height: 140px;
+}
+.client a{
+	background-color: #3081c8;
+	color:white;
+	padding: 5px;
+
+}
+
+.client a:hover{
+	background-color: green;
+	color:white;
+
+}
+
+#logo{
+	border: 1px solid blue;
+	width: 700px;
+	float: left;
+}
+#menu{
+	clear: left;
+}
+
+
+#menu1{
+	margin: 50px 0px 0px 220px;
+	
+}
+
+/*stylisation des liens du menus principal*/
+#menu1 li{
+	list-style-type: none;
+	text-decoration: none;
+	color:white;
+	padding: 7px;
+}
+#menu1 a{
+	text-decoration: none;
+	margin:5px;
+	color:white;
+	background-color: #3081c8;
+	padding: 6px;
+	border: 1px solid #3081c8;
+	border-radius: 10px 10px 0px 0px;
+
+}
+
+#menu1 li{
+	display: inline-block;
+	padding: 5px;
+	}
+#menu2 li a{
+	border-radius:inherit;
+	border: inherit;
+}
+#menu2 li{
+	display: inherit; /*on enleve ce comportement pour ce sous menu*/
+	position: relative;
+}
+#menu2{
+	position: absolute;
+	overflow: hidden;
+	z-index: 5;
+	left: 340px ;
+	top: 83px;
+	display: none;
+	background: #3081c8;
+	border: solid white 2px;
+	width: 100px;
+	border-radius: 5px;
+
+}
+#menu1 li:hover ul{
+       display: inherit;
+       width: 180px;
+}
+
+/*ajoutons des transitions a nos liens*/
+#menu1 a:hover{
+	transition-property:background;
+	transition-duration:1s;
+	transition-timing-function:ease-out;
+	transition-delay:0s;
+	background: olive;
+}
+
+#imgpanier{  /*rédimention du style du panier*/
+	width: 60px;
+	float: right;
+	margin: 0px;
+	position: relative;
+	top:-22px;
+}
+
+.nbre{
+	border: solid orange 6px;
+	background: orange;
+	border-radius:100px;
+	color: white;
+	font-weight: bolder;
+	font-size: 1.6em;
+}
+
+/*styles du pied de page*/
+footer{
+	font-family: Helvetica;
+	line-height: 1.9;
+	background-color: rgb(67, 67, 67);
+	clear: both;
+	color: black;
+	font-size: 1.08em;
+	margin-right: 0px;
+    margin-left: auto;
+    max-width: 1600px;
+	text-align:left;
+	height: auto;
+	padding: 10px;
+}
+.footcol{
+    min-height: 1.2px;
+    padding-left: 20px;
+    text-align: left;
+    border: solid white 15px;
+}
+
+footer a, ul, li{
+	color: white;
+	list-style-type: none;
+}
+
+.footer-titre{
+	margin-left: 25px;
+	font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(246, 139, 30);
+}
+
+span h2{
+	color: white;
+	font-size:15px;
+}
+
+
+
+/*RESPONSIVE DESIGN DU HEADER*/
+@media screen and (max-width: 700px) {
+
+	header {
+	/*position: fixed;*/
+	height:60PX;
+	margin: 0px;
+}
+
+
+#entete{
+	border: 1px solid blue;
+	padding: 5px;
+
+}
+.client{
+	display: inline;
+	float: right;
+	border-right: 1px;
+	width: auto;
+	height: 70px;
+}
+
+
+#menu{
+	clear: left;
+}
+
+#menu1{
+	margin: 1px 0px 0px 7px;
+	
+}
+
+/*stylisation des liens du menus principal*/
+
+#menu1 a{
+	text-decoration: none;
+	margin:1px;
+	color:white;
+	padding: 2px;
+}
+
+#menu1 li{
+	display: block;
+	padding: 1px;
+	margin: 3px;
+	}
+
+#imgpanier{  /*rédimention du style du panier*/
+	width: 40px;
+
+}
+
+.nbre{
+	font-size: 1em;
+}
+
+  
+}
