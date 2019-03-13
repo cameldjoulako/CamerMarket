@@ -43,8 +43,8 @@
 			<!-- telephone field -->
 		    <div class="form-group">
 				<label class="control-label" for="telephone">Téléphone:</label>
-				<span id="etelephone"></span>
-				<input type="date" class="form-control2" id="telephone" name="telephone" 
+				<span id="tetelephone"></span>
+				<input type="number" class="form-control2" id="telephone" name="telephone" 
 						placeholder=" Your phone number" size="9" />
 			</div>
 

@@ -15,5 +15,5 @@
 
 			</div>
 
-		<?php include_once('includes/footer.php'); /*ici c'est le pied de page du site*/?>
+<?php include_once('includes/footer.php'); /*ici c'est le pied de page du site*/?>
 		
